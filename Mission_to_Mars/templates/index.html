@@ -22,6 +22,59 @@
     <dir>
         {{mars}}
     </dir>
+<!--Nasa Mars New-->
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col-9">
+            <div class="card mb-3">
+                <h3 class="card-header">Latest Mars News</h3>
+                <div class="card-body">
+                  <h5 class="card-title">{{mars.New_title}}</h5>
+                  <h6 class="card-subtitle text-muted">{{mars.New_article}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--Feactured Image-->
+
+    <div class="row">
+        <div class="col-8">
+            <div class="card mb-3">
+                <h3 class="card-header">Feactured Image</h3>
+            
+                <img src="{{mars.featured_image_url}}" alt="Featured Mars Image">
+                <p>source:{{mars.featured_image_url}}</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card mb-3">
+                <h3 class="card-header">Mars Facts</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="{{mars.hemisphere_image_urls[0].url_img}}" alt="Featured Mars Image H">
+            <p>{{mars.hemisphere_image_urls[0].url_img}}</p>
+        </div>
+    </div>
+    
+</div>
+
+
+<!--Mar Facts-->
+
+<!--Mar Hemispheres-->
 
 </body>
 </html>
