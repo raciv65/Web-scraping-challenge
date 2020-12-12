@@ -81,22 +81,22 @@
                 <h3 class="card-header">Mars Hemispheres</h3>
                 <div class="row">
                     <div class="col-6">
-                        <img src="{{mars.hemisphere_image_urls[0].url_img}}" width="400" height="400">
-                        <p>source: {{mars.hemisphere_image_urls[0].title}}</p>
+                        <img src="{{mars.hemisphere_image_urls[0].url_img if mars !=None else 'NONE'}}" width="400" height="400">
+                        <p>source: {{mars.hemisphere_image_urls[0].title if mars !=None else 'NONE'}}</p>
                     </div>
                     <div class="col-6">
-                        <img src="{{mars.hemisphere_image_urls[1].url_img}}" width="400" height="400">
-                        <p>source: {{mars.hemisphere_image_urls[1].title}}</p>
+                        <img src="{{mars.hemisphere_image_urls[1].url_img if mars !=None else 'NONE'}}" width="400" height="400">
+                        <p>source: {{mars.hemisphere_image_urls[1].title if mars !=None else 'NONE'}}</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <img src="{{mars.hemisphere_image_urls[2].url_img}}" width="400" height="400">
-                        <p>source: {{mars.hemisphere_image_urls[2].title}}</p>
+                        <img src="{{mars.hemisphere_image_urls[2].url_img if mars !=None else 'NONE'}}" width="400" height="400">
+                        <p>source: {{mars.hemisphere_image_urls[2].title if mars !=None else 'NONE'}}</p>
                     </div>
                     <div class="col-6">
-                        <img src="{{mars.hemisphere_image_urls[3].url_img}}" width="400" height="400">
-                        <p>source: {{mars.hemisphere_image_urls[3].title}}</p>
+                        <img src="{{mars.hemisphere_image_urls[3].url_img if mars !=None else 'NONE'}}" width="400" height="400">
+                        <p>source: {{mars.hemisphere_image_urls[3].title if mars !=None else 'NONE'}}</p>
                     </div>
                 </div>
             </div>
